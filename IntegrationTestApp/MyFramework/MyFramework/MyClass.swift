@@ -16,4 +16,12 @@ public class MyClass {
     public func printA() {
         print("A")
     }
+    
+    public func positiveSumOf(a: Int, b: Int) -> Int? {
+        let sum = a + b
+        if sum > 0 {
+            return sum
+        }
+        return nil
+    }
 }

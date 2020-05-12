@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4968A315246ADC1400523485 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4968A314246ADC0A00523485 /* XCTest.framework */; };
+		4968A316246ADC1E00523485 /* TestCanDoAnotherThing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4968A312246ADB5A00523485 /* TestCanDoAnotherThing.swift */; };
 		49A3002D2417BB9F00976B33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3002C2417BB9F00976B33 /* AppDelegate.swift */; };
 		49A3002F2417BB9F00976B33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3002E2417BB9F00976B33 /* SceneDelegate.swift */; };
 		49A300312417BB9F00976B33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A300302417BB9F00976B33 /* ViewController.swift */; };
@@ -67,6 +69,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4968A312246ADB5A00523485 /* TestCanDoAnotherThing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCanDoAnotherThing.swift; sourceTree = "<group>"; };
+		4968A314246ADC0A00523485 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		49A300292417BB9F00976B33 /* IntegrationTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntegrationTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A3002C2417BB9F00976B33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49A3002E2417BB9F00976B33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A3009A2417BECB00976B33 /* MyFramework.framework in Frameworks */,
+				4968A315246ADC1400523485 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,9 +116,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4968A30E246AD9B000523485 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				49A3009C2417BF7D00976B33 /* TestIdEnum.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4968A311246ADAF400523485 /* EmbeddedTests */ = {
+			isa = PBXGroup;
+			children = (
+				4968A312246ADB5A00523485 /* TestCanDoAnotherThing.swift */,
+			);
+			path = EmbeddedTests;
+			sourceTree = "<group>";
+		};
 		49A300202417BB9F00976B33 = {
 			isa = PBXGroup;
 			children = (
+				4968A30E246AD9B000523485 /* Shared */,
 				49A3002B2417BB9F00976B33 /* IntegrationTestApp */,
 				49A300422417BBA300976B33 /* IntegrationTestAppTests */,
 				49A3004D2417BBA300976B33 /* IntegrationTestAppUITests */,
@@ -135,11 +157,12 @@
 		49A3002B2417BB9F00976B33 /* IntegrationTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				4968A314246ADC0A00523485 /* XCTest.framework */,
 				49A300802417BC0200976B33 /* MyFramework.xcodeproj */,
+				4968A311246ADAF400523485 /* EmbeddedTests */,
 				49A3002C2417BB9F00976B33 /* AppDelegate.swift */,
 				49A3002E2417BB9F00976B33 /* SceneDelegate.swift */,
 				49A300302417BB9F00976B33 /* ViewController.swift */,
-				49A3009C2417BF7D00976B33 /* TestIdEnum.swift */,
 				49A300322417BB9F00976B33 /* Main.storyboard */,
 				49A300352417BBA300976B33 /* Assets.xcassets */,
 				49A300372417BBA300976B33 /* LaunchScreen.storyboard */,
@@ -338,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A300312417BB9F00976B33 /* ViewController.swift in Sources */,
+				4968A316246ADC1E00523485 /* TestCanDoAnotherThing.swift in Sources */,
 				49A3009D2417BF7D00976B33 /* TestIdEnum.swift in Sources */,
 				49A3002D2417BB9F00976B33 /* AppDelegate.swift in Sources */,
 				49A3002F2417BB9F00976B33 /* SceneDelegate.swift in Sources */,
